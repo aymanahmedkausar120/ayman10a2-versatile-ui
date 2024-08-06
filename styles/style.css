@@ -22,6 +22,12 @@ body {
 
 }
 
+main {
+	width: 100%;
+	margin: 90px auto;
+	padding: 0px 120px;
+}
+
 .container {
 	width: 100%;
 	margin: 3rem auto;
@@ -123,7 +129,7 @@ body {
 .health-title {
 	color: #fff;
 	font-size: 78px;
-	font-weight: 400px;
+	font-weight: 900px;
 	font-style: normal;
 	line-height: 120%;
 }
@@ -205,6 +211,58 @@ body {
 	color: #fff;
 }
 
+/* habit styles */
+
+/* habit content styles */
+.habit-content {
+	margin: 0 auto;
+	text-align: center;
+	width: 640px;
+}
+
+.habit {
+	color: #fff;
+	font-size: 48px;
+	font-weight: 900px;
+}
+
+.habit-description {
+	font-size: 14px;
+	margin-top: 12px;
+	margin-bottom: 50px;
+	line-height: 22px;
+	letter-spacing: 0.3px;
+}
+
+/* habit container styles */
+
+.habit-img {
+	border-radius: 50%;
+}
+
+.habit-container {
+	display: flex;
+	gap: 40px;
+}
+
+.habit-item {
+	text-align: center;
+}
+
+.habit-container-title {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 120%;
+	margin-top: 28px;
+	margin-bottom: 6px;
+}
+
+.habit-container-description {
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.3px;
+}
 
 /* small device or phone responsive styles */
 
@@ -223,29 +281,57 @@ body {
 		font-size: 30px;
 	}
 
-
 	.health {
 		display: grid;
 		flex-direction: column;
+	}
+
+	.habit,
+	.habit-container {
+		display: grid;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.habit-content {
+		width: 362px;
+	}
+
+	.header {
+		margin-top: 0rem;
+		margin-bottom: 0rem;
+	}
+
+	.habit {
+		margin-top: -130px;
+	}
+
+	.health {
 		gap: 3rem;
 	}
 
 	.health,
-	.nav-bar {
+	.nav-bar,
+	.habit-content {
 		padding: 18px;
 	}
 
-
 	.health img {
-		width: 95%;
+		width: 100%;
 	}
 
-	.health-title {
+	.health-title,
+	.habit-title {
 		font-size: 33px;
 	}
 
 	.health-content .description {
 		width: 280px;
+	}
+
+	.habit-container-description {
+		width: 230px;
 	}
 
 	.miama-font {
