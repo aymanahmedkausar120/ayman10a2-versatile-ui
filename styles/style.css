@@ -22,19 +22,20 @@ body {
 
 }
 
+.container {
+	width: 100%;
+	margin: 3rem auto;
+}
+
 main {
 	width: 100%;
 	margin: 90px auto;
 	padding: 0px 120px;
 }
 
-.container {
-	width: 100%;
-	margin: 3rem auto;
-}
-
 .description {
 	color: rgba(255, 255, 255, 0.50);
+	font-size: 14px;
 }
 
 .btn-primary {
@@ -44,10 +45,9 @@ main {
 	background-color: #E6533c;
 	color: #fff;
 	font-size: 18px;
-	font-weight: 600;
+	font-weight: 590;
 	font-style: normal;
 	padding: 8px 20px;
-	line-height: normal;
 	border-radius: 42px;
 	border: none;
 }
@@ -112,13 +112,14 @@ main {
 	height: 580px;
 }
 
-.health-content .description {
+.health-content .health-description {
 	margin-top: 24px;
 	margin-bottom: 24px;
 }
 
 .health-content .btn {
-	padding: 18px 40px;
+	font-size: 16px;
+	padding: 16px 42px;
 }
 
 #app-btn {
@@ -132,6 +133,11 @@ main {
 	font-weight: 900px;
 	font-style: normal;
 	line-height: 120%;
+}
+
+.health-description {
+	color: rgba(255, 255, 255, 0.50);
+	font-size: 16px;
 }
 
 /* tutorial btn styles */
@@ -227,7 +233,6 @@ main {
 }
 
 .habit-description {
-	font-size: 14px;
 	margin-top: 12px;
 	margin-bottom: 50px;
 	line-height: 22px;
@@ -264,6 +269,49 @@ main {
 	letter-spacing: 0.3px;
 }
 
+/* Run and Extra Mile Easily Container styles */
+
+.run-mile-container {
+	display: flex;
+	background-color: #222;
+	margin-top: 90px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 32px 29px 54px;
+	border: 1px solid red;
+}
+
+
+.run-img img {
+	width: 420px;
+	height: 370px;
+	object-position: 68% 32%;
+	border-radius: 18px;
+	object-fit: none;
+}
+
+.run-mile-content {
+	width: 436px;
+}
+
+.run-title {
+	color: #FFF;
+	font-size: 48px;
+	font-weight: 900px;
+}
+
+.run-des {
+	margin-top: 18px;
+	margin-bottom: 38px;
+	line-height: 22px;
+}
+
+.run-mile-content .btn {
+	font-size: 15px;
+	padding: 14px 42px;
+}
+
+
 /* small device or phone responsive styles */
 
 @media screen and (max-width: 576px) {
@@ -272,16 +320,36 @@ main {
 		display: none;
 	}
 
+	.tutorial-btn {
+		margin-top: -330px;
+		margin-left: 1.5%;
+	}
+
+	.workout-video-btn {
+		padding: 13px 14px;
+		margin-top: -535px;
+		margin-left: 49.50%;
+	}
+
+	.run-img img {
+		object-fit: fill;
+		offset-block-end: start;
+		width: 100%;
+		height: 170px;
+		object-position: 68% 33%;
+		border-radius: 18px;
+	}
+
 	.bars {
 		display: block;
-		margin-right: 20px;
 	}
 
 	.bars i {
 		font-size: 30px;
 	}
 
-	.health {
+	.health,
+	.run-mile-container {
 		display: grid;
 		flex-direction: column;
 	}
@@ -294,8 +362,12 @@ main {
 		text-align: center;
 	}
 
+	.run-mile-content {
+		text-align: start;
+	}
+
 	.habit-content {
-		width: 362px;
+		width: 320px;
 	}
 
 	.header {
@@ -311,27 +383,45 @@ main {
 		gap: 3rem;
 	}
 
+	main,
 	.health,
 	.nav-bar,
-	.habit-content {
-		padding: 18px;
+	.habit {
+		padding: 20px;
+	}
+
+
+
+	.habit-container-description {
+		width: 230px;
+	}
+
+	.run-mile-container {
+		width: 100%;
+		padding: 31px 33px 35px 33px;
 	}
 
 	.health img {
 		width: 100%;
+
 	}
 
 	.health-title,
-	.habit-title {
+	.habit-title,
+	.run-title {
 		font-size: 33px;
 	}
 
-	.health-content .description {
+	.health-description {
 		width: 280px;
 	}
 
-	.habit-container-description {
-		width: 230px;
+	.health-content {
+		width: 60%;
+	}
+
+	.run-mile-content {
+		width: 100%;
 	}
 
 	.miama-font {
@@ -346,17 +436,14 @@ main {
 		display: block;
 	}
 
-	.tutorial-btn {
-		margin-top: -330px;
-		margin-left: 9px;
-	}
-
-	.workout-video-btn {
-		margin-top: -545px;
-	}
-
 	.health-content .btn {
 		padding: 16px 30px;
+	}
+
+	#gym-btn {
+		width: 100%;
+		margin-top: 24px;
+		margin-bottom: 30px;
 	}
 
 }
