@@ -30,12 +30,13 @@ body {
 main {
 	width: 100%;
 	margin: 90px auto;
-	padding: 0px 120px;
 }
 
 .description {
 	color: rgba(255, 255, 255, 0.50);
 	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.3px;
 }
 
 .btn-primary {
@@ -55,7 +56,7 @@ main {
 /*------navbar styles----- */
 
 .header {
-	background-color: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);
+	background-color: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.185) 100%);
 }
 
 .nav-bar {
@@ -187,7 +188,7 @@ main {
 	align-items: center;
 	text-align: start;
 	flex-direction: column;
-	background-color: rgba(255, 255, 255, 0.10);
+	background-color: rgba(139, 133, 133, 0.377);
 	border: 1px solid rgba(255, 255, 255, 0.10);
 	backdrop-filter: blur(10px);
 	padding: 14px 21px;
@@ -220,13 +221,17 @@ main {
 /* habit styles */
 
 /* habit content styles */
+.habit {
+	padding: 0px 120px;
+}
+
 .habit-content {
 	margin: 0 auto;
 	text-align: center;
 	width: 640px;
 }
 
-.habit {
+.habit-title {
 	color: #fff;
 	font-size: 48px;
 	font-weight: 900px;
@@ -274,11 +279,11 @@ main {
 .run-mile-container {
 	display: flex;
 	background-color: #222;
-	margin-top: 90px;
+	margin: 90px 120px;
 	align-items: center;
 	justify-content: space-between;
 	padding: 30px 32px 29px 54px;
-	border: 1px solid red;
+	border-radius: 18px;
 }
 
 
@@ -292,6 +297,10 @@ main {
 
 .run-mile-content {
 	width: 436px;
+}
+
+#gym-btn {
+	padding: 12px 55px;
 }
 
 .run-title {
@@ -312,12 +321,138 @@ main {
 }
 
 
+/* .....BMI Calculator section..... */
+.bmi-container {
+	margin-top: 80px;
+	padding: 0px 120px;
+}
+
+.bmi-heading {
+	padding: 0px 190px;
+}
+
+.bmi-heading h3 {
+	align-items: center;
+	color: #fff;
+	font-size: 48px;
+	font-weight: 900px;
+	line-height: 120%;
+}
+
+.bmi-description {
+	margin-top: 14px;
+	letter-spacing: 0.3px;
+	line-height: 24px;
+}
+
+/*-----calculator section styles----- */
+
+.calculator-section {
+	margin-top: 90px;
+	padding: 50px 130px 50px 120px;
+	background-color: rgb(34, 34, 34);
+}
+
+.calculator-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.calculator-content-chield1 h3 {
+	color: #FFF;
+	font-size: 28px;
+	font-weight: 900px;
+	margin-bottom: 60px;
+	line-height: 120%;
+}
+
+table,
+th,
+td {
+	border: 1px solid #5e5959;
+	border-collapse: collapse;
+	padding: 20px 35px;
+	text-align: left;
+}
+
+th {
+	color: #FFF;
+	font-weight: 500px;
+	line-height: 0120%;
+}
+
+td {
+	color: rgba(255, 255, 255, 0.50);
+	font-size: 14px;
+	line-height: 120%;
+}
+
+.calculator-content-chield2 h3 {
+	color: #FFF;
+	font-size: 28px;
+	font-weight: 900px;
+	line-height: 120%;
+}
+
+/* ----calculator-content-chield2---- */
+
+.calculator-content-chield2 h3 {
+	margin-bottom: 14px;
+}
+
+.calculator-input {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0px 8px;
+	margin-top: 34px;
+}
+
+.calculator-input input,
+select {
+	width: 100%;
+	color: rgba(255, 255, 255, 0.60);
+	background-color: rgba(255, 255, 255, 0.10);
+	padding: 20px 40px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	border: none;
+}
+
+
+select {
+	color: rgba(160, 154, 154, 0.5);
+}
+
+.activity {
+	padding: 12px 20px;
+}
+
+.bmi-btn {
+	font-size: 16px;
+	padding: 12px 40px;
+	margin-top: 34px;
+}
+
+
 /* small device or phone responsive styles */
 
 @media screen and (max-width: 576px) {
 
 	.nav-option {
 		display: none;
+	}
+
+	.bars {
+		display: block;
+	}
+
+	.bars i {
+		font-size: 30px;
+	}
+
+	.header {
+		margin-top: 0rem;
+		margin-bottom: 0rem;
 	}
 
 	.tutorial-btn {
@@ -331,25 +466,9 @@ main {
 		margin-left: 49.50%;
 	}
 
-	.run-img img {
-		object-fit: fill;
-		offset-block-end: start;
-		width: 100%;
-		height: 170px;
-		object-position: 68% 33%;
-		border-radius: 18px;
-	}
-
-	.bars {
-		display: block;
-	}
-
-	.bars i {
-		font-size: 30px;
-	}
-
 	.health,
-	.run-mile-container {
+	.run-mile-container,
+	.calculator-content {
 		display: grid;
 		flex-direction: column;
 	}
@@ -362,21 +481,12 @@ main {
 		text-align: center;
 	}
 
-	.run-mile-content {
-		text-align: start;
+	.miama-font {
+		font-size: 52px;
 	}
 
-	.habit-content {
-		width: 320px;
-	}
-
-	.header {
-		margin-top: 0rem;
-		margin-bottom: 0rem;
-	}
-
-	.habit {
-		margin-top: -130px;
+	.health img {
+		width: 100%;
 	}
 
 	.health {
@@ -386,29 +496,35 @@ main {
 	main,
 	.health,
 	.nav-bar,
-	.habit {
+	.habit,
+	.bmi-container,
+	.calculator-section,
+	.bmi-heading,
+	.run-mile-container {
 		padding: 20px;
 	}
 
+	.run-mile-container {
+		margin: 66px 0px 0px 0px;
+	}
 
+
+	.habit {
+		margin-top: -130px;
+	}
+
+	.habit-content {
+		width: 320px;
+	}
 
 	.habit-container-description {
 		width: 230px;
 	}
 
-	.run-mile-container {
-		width: 100%;
-		padding: 31px 33px 35px 33px;
-	}
-
-	.health img {
-		width: 100%;
-
-	}
-
 	.health-title,
 	.habit-title,
-	.run-title {
+	.run-title,
+	.bmi-heading h3 {
 		font-size: 33px;
 	}
 
@@ -420,12 +536,26 @@ main {
 		width: 60%;
 	}
 
+	.run-img img {
+		object-fit: fill;
+		offset-block-end: start;
+		width: 100%;
+		height: 170px;
+		object-position: 68% 33%;
+		border-radius: 18px;
+	}
+
+	.run-mile-container {
+		width: 100%;
+		padding: 31px 33px 35px 33px;
+	}
+
 	.run-mile-content {
 		width: 100%;
 	}
 
-	.miama-font {
-		font-size: 50px;
+	.run-mile-content {
+		text-align: start;
 	}
 
 	#large-device-btn {
@@ -444,6 +574,19 @@ main {
 		width: 100%;
 		margin-top: 24px;
 		margin-bottom: 30px;
+	}
+
+	.calculator-content-chield2,
+	.bmi-container {
+		margin-top: 42px;
+	}
+
+	.bmi-container {
+		padding-top: 0px;
+	}
+
+	.calculator-section {
+		margin-top: 0px;
 	}
 
 }
