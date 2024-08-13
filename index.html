@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="container header">
 		<!----Navbar----->
 		<nav class="container nav-bar">
 			<h3 class="nav-title">Fitness</h3>
@@ -24,14 +24,15 @@
 			<div class="bars"><i class="fa-solid fa-bars"></i></div>
 		</nav>
 		<!-- banner -->
-		<section class="health">
+		<section class="container health">
 			<div class="health-content">
 				<h3 class="health-title">Get body in <span class="miama-font"> shape</span> & stay healthy
 				</h3>
-				<p class="health-description">A huge selection of health and fitness content, healthy recipes and
+				<p class="description">A huge selection of health and fitness content, healthy recipes and
 					transformation
 					stories to help
-					you get fit and stay fit!</p>
+					you get fit and stay fit! getting your body in shape and staying healthy requires regular exercise,
+				</p>
 				<div class="health-btn">
 					<input id="large-device-btn" class="btn-primary btn" type="button" value="Join Club Now!">
 					<input id="mobile-device-btn" class="btn-primary btn" type="button" value="Join Now!">
@@ -39,7 +40,10 @@
 				</div>
 			</div>
 			<div class="health-banner-img">
-				<img src="./images/Images 2.png" alt="">
+				<div>
+					<img class="mobile-hide" src="./images/Images 2.png" alt="">
+					<img class="desktop-hide" src="./images/Images3.png" alt="">
+				</div>
 				<button class="tutorial-btn">
 					<p class="circle"></p>
 					<div class="tutorial-content">
@@ -106,7 +110,8 @@
 				<button id="gym-btn" class="btn-primary btn">Join Now</button>
 			</div>
 			<div class="run-img">
-				<img class="run-img" src="./images/run.jpg" alt="">
+				<img class="mobile-hide" src="./images/run.jpg" alt="">
+				<img class="desktop-hide" src="./images/run2.png" alt="">
 			</div>
 		</section>
 
