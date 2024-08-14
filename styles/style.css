@@ -61,7 +61,7 @@ main {
 /*------navbar styles----- */
 
 .header {
-	background-color: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.938) 100%);
+	background-color: linear-gradient(180deg, #353030e3 0%, rgba(119, 119, 119, 0.979) 100%);
 	background-color: #000;
 }
 
@@ -676,10 +676,6 @@ select {
 		margin: 35px 0px 0px 0px;
 	}
 
-	/* .header {
-		position: relative;
-	} */
-
 	.tutorial-btn {
 		margin-top: -232px;
 		margin-left: 1.3%;
@@ -687,7 +683,7 @@ select {
 
 	.workout-video-btn {
 		margin-top: -439px;
-		margin-left: 52.50%;
+		margin-left: 51.40%;
 		padding: 14px 15px;
 	}
 
@@ -730,6 +726,22 @@ select {
 		gap: 3rem;
 	}
 
+	.health-content {
+		width: 100%;
+	}
+
+	.health-banner-img {
+		width: 100%;
+	}
+
+	.health-content h3 {
+		font-size: 36px;
+	}
+
+	.health-content p {
+		width: 300px;
+	}
+
 	main,
 	.health,
 	.nav-bar,
@@ -768,10 +780,6 @@ select {
 		width: 230px;
 	}
 
-	.health-content h3 {
-		font-size: 36px;
-	}
-
 	.habit-title,
 	.run-title,
 	.bmi-heading h3,
@@ -784,9 +792,6 @@ select {
 		width: 261px;
 	}
 
-	.health-content p {
-		width: 100%;
-	}
 
 	.run-img img {
 		object-fit: fill;
